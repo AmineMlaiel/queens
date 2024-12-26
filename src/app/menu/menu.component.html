@@ -1,0 +1,38 @@
+<div class="min-h-screen bg-gradient-to-b from-amber-50 to-amber-100 p-8">
+  <!-- Header -->
+  <div class="text-center mb-12">
+    <h1 class="text-4xl md:text-6xl font-serif text-amber-900 mb-4">Queens</h1>
+    <p class="text-amber-800 italic">Where Every Sip Tells a Story</p>
+  </div>
+
+  <!-- Category Filter -->
+  <div class="flex justify-center gap-4 mb-8 flex-wrap">
+    <button 
+      *ngFor="let cat of categories"
+      (click)="filterCategory(cat)"
+      [class.bg-amber-800]="selectedCategory() === cat"
+      [class.text-white]="selectedCategory() === cat"
+      class="px-4 py-2 rounded-full border-2 border-amber-800 hover:bg-amber-700 
+             hover:text-white transition-colors duration-300 text-amber-900">
+      {{cat}}
+    </button>
+  </div>
+
+  <!-- Menu Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    <div *ngFor="let item of filteredMenu()"
+         class="group relative bg-white p-6 rounded-lg shadow-lg hover:shadow-xl 
+                transition-all duration-300 transform hover:-translate-y-1">
+      <div *ngIf="item.isSignature" 
+           class="absolute -top-2 -right-2 bg-amber-800 text-white px-3 py-1 
+                  rounded-full text-sm font-serif">
+        Signature
+      </div>
+      <h3 class="text-xl font-serif text-amber-900 mb-2 group-hover:text-amber-700">
+        {{item.name}}
+      </h3>
+      <p class="text-gray-600 mb-4 text-sm">{{item.description}}</p>
+      <p class="text-amber-800 font-serif text-lg">${{item.price.toFixed(2)}}</p>
+    </div>
+  </div>
+</div>
