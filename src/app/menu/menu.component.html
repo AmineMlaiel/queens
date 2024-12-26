@@ -1,7 +1,13 @@
-<div class="min-h-screen bg-gradient-to-b from-amber-50 to-amber-100 p-8">
+<!-- <div class="min-h-screen bg-gradient-to-b from-amber-50 to-amber-100 p-8 relative"> -->
+  <!-- Video Background -->
+  <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+    <source src="assets/videos/bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
   <!-- Header -->
   <div class="text-center mb-12">
-    <h1 class="text-4xl md:text-6xl font-serif text-amber-900 mb-4">Queens</h1>
+    <h1 class="text-4xl md:text-6xl font-serif text-amber-900 mb-4">Chichkhen</h1>
     <p class="text-amber-800 italic">Where Every Sip Tells a Story</p>
   </div>
 
@@ -20,19 +26,34 @@
 
   <!-- Menu Grid -->
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-    <div *ngFor="let item of filteredMenu()"
+    <div *ngFor="let item of filteredMenu()" 
          class="group relative bg-white p-6 rounded-lg shadow-lg hover:shadow-xl 
-                transition-all duration-300 transform hover:-translate-y-1">
-      <div *ngIf="item.isSignature" 
-           class="absolute -top-2 -right-2 bg-amber-800 text-white px-3 py-1 
-                  rounded-full text-sm font-serif">
-        Signature
+                transition-all duration-300 transform hover:-translate-y-1"
+         (mouseover)="showPreview(item)"
+         (mouseleave)="hidePreview()"
+         (touchstart)="showPreview(item)"
+         (touchend)="hidePreview()">
+      
+      <div class="relative z-20">
+        <div *ngIf="item.isSignature" 
+             class="absolute -top-2 -right-2 bg-amber-800 text-white px-3 py-1 
+                    rounded-full text-sm font-serif">
+          Signature
+        </div>
+        <h3 class="text-xl font-serif text-amber-900 mb-2 group-hover:text-amber-700">
+          {{item.name}}
+        </h3>
+        <p class="text-gray-600 mb-4 text-sm">{{item.description}}</p>
+        <p class="text-amber-800 font-serif text-lg">${{item.price.toFixed(2)}}</p>
       </div>
-      <h3 class="text-xl font-serif text-amber-900 mb-2 group-hover:text-amber-700">
-        {{item.name}}
-      </h3>
-      <p class="text-gray-600 mb-4 text-sm">{{item.description}}</p>
-      <p class="text-amber-800 font-serif text-lg">${{item.price.toFixed(2)}}</p>
+
+      <div *ngIf="activeItem?.id === item.id" 
+           class="absolute inset-0 bg-white/80 backdrop-blur-sm rounded-lg overflow-hidden z-10 
+                  animate-fade-in">
+        <img [src]="item.imageUrl" 
+             [alt]="item.name"
+             class="w-full h-full object-cover">
+      </div>
     </div>
   </div>
-</div>
+<!-- </div> -->
