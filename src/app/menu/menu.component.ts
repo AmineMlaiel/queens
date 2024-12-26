@@ -63,7 +63,49 @@ export class MenuComponent implements OnInit {
       price: 6.00,
       category: "Classics",
       isSignature: true
+    },
+    //
+    {
+      id: 7,
+      name: "Espresso Can Panna",
+      description: "A bold shot of rich espresso topped with a dollop of silky whipped cream, offering a perfect harmony of strength and indulgence",
+      price: 7.50,
+      category: "Espresso",
+      isSignature: true
+    },
+    {
+      id: 8,
+      name: "Freddo",
+      description: "A refreshing twist on espresso, expertly chilled and frothed to deliver a smooth, velvety coffee experience, perfect for hot days",
+      price: 5.50,
+      category: "Espresso",
+      isSignature: true
+    },
+    {
+      id: 9,
+      name: "Raf",
+      description: "A luxurious blend of espresso, cream, and sugar, gently steamed together to create a creamy, velvety coffee delight with a hint of sweetness",
+      price: 4.0,
+      category: "Espresso",
+      isSignature: true
+    },
+    {
+      id: 10,
+      name: "Irish ",
+      description: "A bold espresso blend infused with a hint of Irish cream flavor, delivering a rich and indulgent coffee experience with a velvety finish",
+      price: 3.50,
+      category: "Espresso",
+      isSignature: true
+    },
+    {
+      id: 11,
+      name: "Espresso Macchiato",
+      description: "A rich shot of espresso delicately marked with a dollop of velvety steamed milk, offering a bold yet smooth coffee experience",
+      price: 8.50,
+      category: "Espresso",
+      isSignature: true
     }
+    //
   ]);
 
   categories = ["All", "Espresso", "Classics", "Specialty", "Cold Drinks"];
