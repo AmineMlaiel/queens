@@ -27,7 +27,7 @@ export class MenuComponent implements OnInit {
       price: 4.50,
       category: "Coffee",
       isSignature: true,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/royal.jpg"
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ export class MenuComponent implements OnInit {
       price: 6.50,
       category: "Specialty",
       isSignature: true,
-      imageUrl: "assets/img/roya-coffee.jpg"
+      imageUrl: "assets/img/latte.jpeg"
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ export class MenuComponent implements OnInit {
       description: "Velvety microfoam with our house blend coffee",
       price: 5.50,
       category: "Classics",
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/CrownCappuccino.jpg"
     },
     {
       id: 4,
@@ -52,15 +52,16 @@ export class MenuComponent implements OnInit {
       description: "House-made lavender syrup with oat milk and coffee",
       price: 6.00,
       category: "Specialty",
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/Lavender-Coffee.jpeg",
+      isSignature: true
     },
     {
       id: 5,
       name: "Regal Cold Brew",
       description: "24-hour steeped premium beans with subtle chocolate notes",
       price: 5.00,
-      category: "Cold Drinks",
-      imageUrl: "assets/img/royal-coffee.jpg",
+      category: "Coffee",
+      imageUrl: "assets/img/coldBrew.webp",
       isSignature: true
     },
     {
@@ -70,7 +71,7 @@ export class MenuComponent implements OnInit {
       price: 6.00,
       category: "Classics",
       isSignature: true,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/MajesticMocha.jpg"
     },
     {
       id: 7,
@@ -79,7 +80,7 @@ export class MenuComponent implements OnInit {
       price: 7.50,
       category: "Coffee",
       isSignature: true,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/panna.webp"
     },
     {
       id: 8,
@@ -88,17 +89,9 @@ export class MenuComponent implements OnInit {
       price: 5.50,
       category: "Coffee",
       isSignature: true,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/Freddo.jpeg"
     },
-    {
-      id: 9,
-      name: "Raf",
-      description: "A luxurious blend of coffee, cream, and sugar, gently steamed together to create a creamy, velvety coffee delight with a hint of sweetness",
-      price: 4.00,
-      category: "Coffee",
-      isSignature: true,
-      imageUrl: "assets/img/royal-coffee.jpg"
-    },
+    
     {
       id: 10,
       name: "Irish",
@@ -115,7 +108,7 @@ export class MenuComponent implements OnInit {
       price: 8.50,
       category: "Coffee",
       isSignature: true,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/machiatto.jpg"
     },
     // Juices
     {
@@ -125,7 +118,7 @@ export class MenuComponent implements OnInit {
       price: 4.00,
       category: "Juice",
       isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/orange.jpg"
     },
     {
       id: 13,
@@ -134,7 +127,7 @@ export class MenuComponent implements OnInit {
       price: 4.50,
       category: "Juice",
       isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/pineapple.jpg"
     },
     {
       id: 14,
@@ -143,7 +136,7 @@ export class MenuComponent implements OnInit {
       price: 5.00,
       category: "Juice",
       isSignature: true,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/mango.jpg"
     },
     {
       id: 15,
@@ -152,7 +145,7 @@ export class MenuComponent implements OnInit {
       price: 5.50,
       category: "Juice",
       isSignature: true,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/milkshake.jpg"
     },
     {
       id: 16,
@@ -161,7 +154,7 @@ export class MenuComponent implements OnInit {
       price: 4.25,
       category: "Juice",
       isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/watermalon.jpg"
     },
     // Chicha
     {
@@ -170,8 +163,7 @@ export class MenuComponent implements OnInit {
       description: "A flavorful chicha with a smooth blend of spices and herbs, offering a unique, aromatic experience.",
       price: 6.00,
       category: "Chicha",
-      isSignature: true,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/chicha.monte.jpg"
     },
     {
       id: 18,
@@ -180,7 +172,7 @@ export class MenuComponent implements OnInit {
       price: 5.50,
       category: "Chicha",
       isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/chicha.pomme.webp"
     },
     {
       id: 19,
@@ -188,8 +180,8 @@ export class MenuComponent implements OnInit {
       description: "A sweet and aromatic chicha with a touch of rosewater, offering a delicate and romantic flavor.",
       price: 6.50,
       category: "Chicha",
-      isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      isSignature: true,
+      imageUrl: "assets/img/chicha.love.jpg"
     },
     {
       id: 20,
@@ -198,7 +190,7 @@ export class MenuComponent implements OnInit {
       price: 7.00,
       category: "Chicha",
       isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/chicha.chi51.png"
     },
     {
       id: 21,
@@ -207,7 +199,7 @@ export class MenuComponent implements OnInit {
       price: 5.75,
       category: "Chicha",
       isSignature: true,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/chicha.special.webp"
     },
     // Water
     {
@@ -217,16 +209,16 @@ export class MenuComponent implements OnInit {
       price: 1.00,
       category: "Water",
       isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/water.jpeg"
     },
     {
       id: 23,
       name: "Water 1L",
-      description: "",
+      description: "A refreshing citrus soda with a tangy and sweet flavor, perfect for cooling down on a hot day.",
       price: 1.50,
       category: "Water",
       isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/water.jpeg"
     },
     // Gazouz
     {
@@ -236,7 +228,7 @@ export class MenuComponent implements OnInit {
       price: 2.00,
       category: "Cold Drinks",
       isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/fant.webp"
     },
     {
       id: 25,
@@ -245,7 +237,7 @@ export class MenuComponent implements OnInit {
       price: 2.00,
       category: "Cold Drinks",
       isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/coke.jpg"
     },
     {
       id: 26,
@@ -254,7 +246,7 @@ export class MenuComponent implements OnInit {
       price: 2.25,
       category: "Cold Drinks",
       isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/apla.jpeg"
     },
     {
       id: 27,
@@ -263,26 +255,18 @@ export class MenuComponent implements OnInit {
       price: 2.50,
       category: "Cold Drinks",
       isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/boga.jpg"
     },
     {
       id: 28,
-      name: "Swipess",
+      name: "Schweppes",
       description: "A refreshing and zesty soda with a blend of tropical fruit flavors, perfect for a quick thirst quencher.",
       price: 2.25,
       category: "Cold Drinks",
       isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
+      imageUrl: "assets/img/schweppes.jpg"
     },
-    {
-      id: 29,
-      name: "Perpsi",
-      description: "A crisp, bubbly soda with a refreshing taste that offers a sweet and slightly tangy sensation.",
-      price: 2.00,
-      category: "Cold Drinks",
-      isSignature: false,
-      imageUrl: "assets/img/royal-coffee.jpg"
-    }
+    
   ]);
 
   categories = ["Chic", "Coffee", "Cold Drinks", "Specialty", "Classics", "Juice", "Water", "Chicha"];
@@ -296,7 +280,7 @@ export class MenuComponent implements OnInit {
   );
 
   ngOnInit() {
-    this.selectedCategory.set("All");
+    this.selectedCategory.set("Chic");
   }
 
   filterCategory(category: string) {
